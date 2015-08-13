@@ -3650,6 +3650,7 @@ AC_ARG_WITH(kerberos5,
 		AC_SEARCH_LIBS(k_hasafs, kafs, AC_DEFINE(USE_AFS, 1,
 			[Define this if you want to use libkafs' AFS support]))
 		AC_CHECK_FUNCS( gss_localname gss_userok)
+		AC_CHECK_FUNCS([gss_indicate_mechs_by_attrs])
 	fi
 	]
 )
